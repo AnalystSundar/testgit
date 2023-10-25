@@ -1,0 +1,16 @@
+second text file
+
+from flask import Flask,render_template
+
+app=Flask(__name__)
+
+@app.route('/')
+@app.route('/register')
+def home():
+    return "Arunsundar"
+
+@app.route("About us")
+def us():
+    print("I am a foolish")
+if __name__=="__main__":
+    app.run(debug=True)
